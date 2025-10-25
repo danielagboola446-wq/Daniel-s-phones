@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Daniel</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Daniel's Phones — Premium Apple & Samsung</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <div class="brand">
+
+        <a href="#/" aria-label="Daniel Phone home"><span class="mark">Daniel's</span> Phones</a>
+
+      </div>
+
+      <div class="search-wrap">
+
+        <input id="search" type="search" placeholder="Search models, e.g. '15 Pro Max', 'S24 Ultra'..." aria-label="Search products">
+
+        <select id="category-filter" aria-label="Filter by category">
+
+          <option value="all">All categories</option>
+
+          <option value="iPhone">iPhone</option>
+
+          <option value="Samsung">Samsung</option>
+
+        </select>
+
+      </div>
+
+      <nav class="actions">
+
+        <a href="#/dashboard" class="nav-link">Dashboard</a>
+
+        <button id="view-cart" class="icon-btn" aria-label="View cart">🛒 <span id="cart-badge">0</span></button>
+
+        <button id="mobile-menu-toggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+
+      </nav>
+
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu">
+
+      <a href="#/" class="mobile-link">Home</a>
+
+      <a href="#/dashboard" class="mobile-link">Dashboard</a>
+
+      <a href="#/cart" class="mobile-link">Cart</a>
+
+      <a href="#/checkout" class="mobile-link">Checkout</a>
+
+    </nav>
+
+  </header>
+
+  <main id="app">
+
+    <!-- Views rendered by JS -->
+
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h4>Daniel Phone</h4>
+
+          <p>Curated premium Apple & Samsung smartphones — authenticity, care, and fast service.</p>
+
+        </div>
+
+        <div>
+
+          <h4>Support</h4>
+
+          <a href="#">Help Center</a>
+
+          <a href="#">Shipping & Returns</a>
+
+        </div>
+
+        <div>
+
+          <h4>Contact</h4>
+
+          <p>hello@danielphone.example</p>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="muted">© <span id="year"></span> Daniel Phone — All rights reserved.</p>
+
+        <p class="muted small">Website owned and founded by <strong>Agboola Daniel</strong>, CEO / Owner.</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Templates -->
+
+  <template id="home-template">
+
+    <section class="hero">
+
+      <div class="container hero-inner">
+
+        <div class="hero-copy">
+
+          <h1>Premium smartphones — Apple & Samsung, carefully curated.</h1>
+
+          <p class="lead">Find detailed descriptions, specs, and comparisons for the latest iPhone and Galaxy models. Daniel Phone focuses on clarity, authenticity and outstanding service.</p>
+
+          <div class="cta-row">
+
+            <a href="#/dashboard" class="btn ghost">Open Dashboard</a>
+
+            <a href="#products" class="btn">Shop Phones</a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-media">
+
+          <div class="mockup"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- About / CEO -->
+
+    <section class="container about-section">
+
+      <div class="about-grid">
+
+        <div class="about-photo">
+
+          <div class="ceo-photo">AD</div>
+
+        </div>
+
+        <div class="about-copy">
+
+          <h2>About the Founder — Agboola Daniel</h2>
+
+          <p><strong>Agboola Daniel</strong> founded Daniel Phone to bring a premium, trusted shopping experience for smartphones. With deep product knowledge and a customer-first focus, Agboola curates devices, verifies condition and listings, and supports every sale personally. Our store emphasizes clear specs, honest pricing, and fast delivery.</p>
+
+          <p class="muted">Email: <a href="mailto:hello@danielphone.example">hello@danielphone.example</a></p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Long descriptive brand sections -->
+
+    <section class="container long-text">
+
+      <h2>Why choose Daniel Phone?</h2>
+
+      <p>At Daniel Phone we believe the smartphone is more than a device — it's how you create, connect, and carry your digital life. We provide in-depth, accessible information about each model so you can make the right choice: from camera quality and battery performance to ecosystem and repairability.</p>
+
+      <h3>Apple — design, performance and integrated experience</h3>
+
+      <p>Apple's iPhone range balances premium design, industry-leading silicon, and a tightly integrated software ecosystem. Our iPhone descriptions go into camera capabilities, computational photography, display technologies (ProMotion, OLED), and battery endurance. We highlight differences between Pro and standard models, storage options, and whether a model includes features like USB-C or periscope telephoto lenses.</p>
+
+      <h3>Samsung — variety, display innovations and foldables</h3>
+
+      <p>Samsung offers a broad lineup: powerful S-series flagships, innovative Z Fold and Z Flip foldables, and the value-driven A-series. We cover the Galaxy S & Z technologies (Adaptive AMOLED displays, high refresh rates), camera versatility, S Pen support on select models, and how the foldables enable new workflows.</p>
+
+      <p class="muted">Scroll down to explore featured devices with long-form descriptions and real specs.</p>
+
+    </section>
+
+    <section class="container products-section">
+
+      <div class="section-head">
+
+        <h2>Featured devices</h2>
+
+        <div class="controls">
+
+          <label>Sort
+
+            <select id="sort-select">
+
+              <option value="featured">Featured</option>
+
+              <option value="price-asc">Price: Low → High</option>
+
+              <option value="price-desc">Price: High → Low</option>
+
+            </select>
+
+          </label>
+
+        </div>
+
+      </div>
+
+      <div id="products-grid" class="product-grid"></div>
+
+    </section>
+
+  </template>
+
+  <template id="product-template">
+
+    <section class="container product-page">
+
+      <div class="product-grid-detail">
+
+        <div class="product-images">
+
+          <img id="pd-main" src="" alt="" />
+
+        </div>
+
+        <div class="product-details">
+
+          <h1 id="pd-title"></h1>
+
+          <p id="pd-category" class="muted"></p>
+
+          <p id="pd-desc"></p>
+
+          <ul id="pd-specs" class="specs"></ul>
+
+          <div class="price-row">
+
+            <span id="pd-price" class="price"></span>
+
+            <span id="pd-rating" class="muted small"></span>
+
+          </div>
+
+          <div class="qty-row">
+
+            <label>Quantity
+
+              <input id="pd-qty" type="number" min="1" value="1">
+
+            </label>
+
+            <button id="pd-add" class="btn">Add to cart</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Extended long description block -->
+
+      <div class="container long-desc">
+
+        <h3>Full product overview</h3>
+
+        <p id="pd-long"></p>
+
+        <h4>Detailed notes</h4>
+
+        <p id="pd-notes" class="muted"></p>
+
+      </div>
+
+    </section>
+
+  </template>
+
+  <template id="cart-template">
+
+    <section class="container cart-page">
+
+      <h2>Your Cart</h2>
+
+      <div id="cart-list" class="cart-list"></div>
+
+      <div class="cart-summary">
+
+        <div>
+
+          <p class="muted">Subtotal</p>
+
+          <p id="cart-subtotal" class="price"></p>
+
+        </div>
+
+        <div>
+
+          <a href="#/checkout" class="btn">Proceed to Checkout</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </template>
+
+  <template id="checkout-template">
+
+    <section class="container checkout-page">
+
+      <h2>Checkout</h2>
+
+      <form id="checkout-form" class="checkout-form">
+
+        <div class="two-col">
+
+          <label>Full name<input name="name" required></label>
+
+          <label>Email<input name="email" type="email" required></label>
+
+        </div>
+
+        <label>Address<input name="address" required></label>
+
+        <div class="two-col">
+
+          <label>City<input name="city" required></label>
+
+          <label>Postal code<input name="postal" required></label>
+
+        </div>
+
+        <div class="muted">(Demo checkout — no payment processed.)</div>
+
+        <button class="btn" type="submit">Place Order</button>
+
+      </form>
+
+    </section>
+
+  </template>
+
+  <template id="dashboard-template">
+
+    <section class="container dashboard-page">
+
+      <h2>Dashboard — Product Management</h2>
+
+      <div class="dashboard-top">
+
+        <div>
+
+          <input id="admin-search" placeholder="Search products in dashboard..." />
+
+          <select id="admin-filter">
+
+            <option value="all">All</option><option value="iPhone">iPhone</option><option value="Samsung">Samsung</option>
+
+          </select>
+
+        </div>
+
+        <div>
+
+          <button id="add-product-btn" class="btn">Add Product</button>
+
+        </div>
+
+      </div>
+
+      <div id="admin-stats" class="admin-stats">
+
+        <div class="stat">Products: <strong id="stat-count"></strong></div>
+
+        <div class="stat">Cart items: <strong id="stat-cart"></strong></div>
+
+      </div>
+
+      <div id="admin-list" class="admin-list"></div>
+
+      <!-- Add/Edit form (hidden by default) -->
+
+      <div id="admin-form-wrap" class="admin-form-wrap hidden">
+
+        <h3 id="admin-form-title">Add product</h3>
+
+        <form id="admin-form">
+
+          <label>Title<input name="title" required></label>
+
+          <label>Category<input name="category" required></label>
+
+          <label>Price<input name="price" required type="number"></label>
+
+          <label>Image URL<input name="image" required></label>
+
+          <label>Description<textarea name="description" rows="4" required></textarea></label>
+
+          <label>Specs (one per line)<textarea name="specs" rows="4"></textarea></label>
+
+          <div class="form-actions">
+
+            <button type="submit" class="btn">Save</button>
+
+            <button type="button" id="admin-cancel" class="btn ghost">Cancel</button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </template>
+
+  <script src="script.js" type="module"></script>
+
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
